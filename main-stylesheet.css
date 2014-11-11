@@ -1,0 +1,741 @@
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic);
+
+/*
+Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+http://cssreset.com
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/*
+HTML5 display-role reset for older browsers
+*/
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* colour scheme
+Black                   rgba(0,0,0,1)
+White                   rgba(255,255,255,1)
+Grey		#444444 rgba(68,68,68,1)
+Green (light)	#289728 rgba(40,151,40,1)
+Green (dark)	#337133 rgba(51,113,51,1)
+Blue (light)	#1E7171 rgba(30,113,113,1)
+Blue (dark)	#265555 rgba(38,85,85,1)
+Orange          #E27918 rgba(226,121,24,1)
+Brown           #8E6337 rgba(142,99,55,1)
+Red		#BD3232 rgba(189,50,50,1)
+Beige		#F0EFD1 rgba(240,239,209,1)
+*/
+
+/*
+images
+*/
+
+img {
+	max-width: 100%;
+	height: auto;
+/*
+        padding: 5px;
+        margin: 5px
+*/
+}
+
+img.content {
+/*
+        padding: 5px;
+        margin: 5px
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+	border-radius: 5px;
+*/
+}
+
+img.body {
+        margin: 5px;
+        width: 48%;
+}
+
+img.icon {
+
+}
+
+img.left {
+        float: left;
+}
+
+img.right {
+        float: right;
+}
+
+img.nav {
+        margin-top: -10px;
+        margin-bottom: -5px;
+}
+
+img.socialmedia {
+        margin-top: -45px;
+        margin-left: -3px;
+        margin-right: -3px;
+}
+
+img.map_pin {
+        height:18px;
+        width:12px;
+        position:relative;
+        top:5px;
+}
+
+img.logo {
+	padding-right: 10px;
+	border-right: 25px solid rgba(255,255,255,1);
+}
+
+/*
+type
+*/
+
+html { 
+        background: #8e6337; /* Old browsers */
+        background: -moz-linear-gradient(left, #8e6337 0%, #f0efd1 50%, #8e6337 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,#8e6337), color-stop(50%,#f0efd1), color-stop(100%,#8e6337)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(left, #8e6337 0%,#f0efd1 50%,#8e6337 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(left, #8e6337 0%,#f0efd1 50%,#8e6337 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(left, #8e6337 0%,#f0efd1 50%,#8e6337 100%); /* IE10+ */
+        background: linear-gradient(to right, #8e6337 0%,#f0efd1 50%,#8e6337 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8e6337', endColorstr='#8e6337',GradientType=1 ); /* IE6-9 */
+}
+
+body {
+        background-color: rgba(142,99,55,0.5);
+        font-family: 'Libre Baskerville', serif;
+        font-size: 1em;
+        font-weight: 400;
+        color: rgb(68,68,68);
+        line-height: 1.4em
+}
+
+a:link {
+        color: rgb(226,121,24);
+        font-weight: 700;
+        text-decoration:none;
+}
+
+a:visited {
+        color: rgb(226,121,24);
+        text-decoration:none;
+}
+
+a:hover {
+        color: rgb(189,50,50);
+}
+
+a:active {
+        color: rgb(226,121,24);
+        text-decoration:none;
+}
+
+a.nav {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 700;
+        font-size: 1.2em;
+        color: rgb(255,255,255);
+        text-shadow: 0em 0em .125em rgba(68,68,68,0.5);
+}
+
+a.nav:hover {
+        color: rgba(240,239,209,1);
+        text-shadow: 0em 0em .125em rgba(226,121,24,0.5);
+}
+
+a.external {
+        background: url('https://lh3.googleusercontent.com/-v09A2sw8JCw/Ux3-NFRFm2I/AAAAAAAAATA/Ojf97lXp-wE/s12/Debug-External-link-icon.png') center left no-repeat;
+        padding-left: 1em;
+}
+
+p {
+        margin-bottom: 1.4em;
+}
+
+h1 {
+        font-size: 1.5em;
+        font-weight: 700;
+}
+
+h2 {
+        margin-bottom: 1em;
+        margin-top: 1em;
+        font-size: 1.4em;
+        font-weight: 700;
+        color: rgba(142,99,55,1);
+        line-height: 1.15em;
+        width: 100%;
+        background-color: rgba(68,68,68,0.1);
+        padding: .5em;
+}
+
+h3 {
+        font-weight: 700;
+}
+
+h4 {
+        font-weight: 700;
+        font-size: .7em;
+}
+
+hr {
+	background:none;
+	clear:both;
+	float:none;
+	width:100%;
+	height:1em;
+	border:none;
+}
+
+li {
+        display: inline;
+        list-style-type: none;
+}
+
+.copy {
+        padding-left: 5em;
+}
+
+/*
+jCarousel Styles
+*/
+
+.jcarousel-skin-pika .jcarousel-container-horizontal {
+        padding: 5px 0px 0px 0px;
+        overflow:hidden;
+}
+
+.jcarousel-skin-pika .jcarousel-clip-horizontal {
+        height: 90px;
+        width: 100%;
+}
+
+.jcarousel-skin-pika .jcarousel-item-horizontal {
+        margin-right: 10px;
+}
+
+.pikachoose {
+        width: 100%;
+/*        
+        margin: 0 auto;
+*/
+}
+
+/*
+Style the jCarousel thumbnails
+*/
+
+.pika-thumbs {
+        padding: 0px;
+        height: 100px;
+}
+
+.pika-thumbs li {
+        width: 115px;
+        height:74px;
+        margin: 10px 0 0 17px;
+        padding: 0;
+        overflow: hidden;
+	float: left;
+	list-style-type: none;
+	padding: 3px;
+	margin: 0 0px;
+	background: #fafafa;
+	border: 1px solid rgba(142,99,55,0.5);
+	cursor: pointer;
+	-webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
+.pika-thumbs li .clip {
+        position:relative;
+        height:100%;
+        text-align: center;
+        vertical-align: middle;
+        overflow: hidden;
+}
+	
+/*
+The stage is the wrapper. The image fills 100% the height of the stage
+*/
+
+.pika-stage, .pika-textnav {
+        width: 95%;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
+.pika-stage {
+        position: relative;
+        background: #fafafa;
+        border: 1px solid rgba(142,99,55,0.5);
+        padding: 10px 10px 40px 10px;
+        text-align:left;
+        min-height:280px;
+        max-height:280px;
+        overflow:hidden;
+        -moz-box-shadow: 0 0 3px 3px rgba(68,68,68,0.25);
+        -webkit-box-shadow: 0 0 3px 3px rgba(68,68,68,0.25);
+        box-shadow: 0 0 3px 3px rgba(68,68,68,0.25);
+}
+
+.pika-stage img {
+        height:auto;
+        width:100%;
+}
+
+.pika-stage img.text {
+        height: auto;
+        width: auto;
+        margin: 2px;
+}
+
+.pika-stage .caption {
+background: #fafafa;
+        width:35%;
+        height:100%;
+        position: absolute; 
+        left:475px;
+        top:10px; 
+	color: rgba(68,68,68,1);
+	/*
+	background: rgba(142,99,55,1);
+	border: 1px solid rgba(240,239,209,1);
+	*/
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow: auto;
+	/*
+	-moz-box-shadow: 0 0 2px 2px rgba(68,68,68,0.25);
+        -webkit-box-shadow: 0 0 2px 2px rgba(68,68,68,0.25);
+        box-shadow: 0 0 2px 2px rgba(68,68,68,0.25);
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+	border-radius: 8px;
+	*/
+}
+
+.pika-stage .caption p {
+        padding-left: .4em;
+        margin: 0;
+        border-left: 2px solid rgba(142,99,55,1);
+}
+
+.pika-stage .caption h2 {
+        color: inherit;
+        margin-top: .25em;
+        margin-bottom: .25em;
+        width:auto;
+        background-color: rgba(68,68,68,0);
+}
+
+/*
+The play, pause, prev and next buttons 
+
+.pika-imgnav a {
+        position: absolute;
+        text-indent: -5000px;
+        display: block;
+        z-index:3;
+}
+
+.pika-imgnav a.previous {
+        background: url(prev.png) no-repeat left 45%;
+        height: 100%;
+        width: 50px;
+        top: 10px;
+        left: 10px;
+        cursor:pointer;
+}
+
+.pika-imgnav a.next {
+        background: url(next.png) no-repeat right 45%;
+        height: 100%;
+        width: 50px;
+        top: 10px;
+        right: 10px;
+        cursor:pointer;
+}
+
+.pika-imgnav a.play {
+        background: url(play.png) no-repeat 0% 50%;
+        height: 100px;
+        width: 44px;
+        top:0;
+        left:50%;
+        display: none;cursor:pointer;
+}
+
+.pika-imgnav a.pause {
+        background: url(pause.png) no-repeat 0% 50%;
+        height: 100px;
+        width: 44px;top:0;
+        left:50%;
+        display:none;
+        cursor:pointer;
+}
+*/
+
+/*
+The previous and next textual buttons
+*/
+
+.pika-textnav {
+        display: none;
+        overflow: hidden;
+        margin: 10px 0 0 0;
+        bottom:0px;
+        position:absolute;
+        font-size: .75em;
+}
+
+.pika-textnav a {
+        font-weight:700;
+        text-decoration: none;
+        color: #444444;
+        padding: 4px;
+        cursor:pointer;
+}
+
+.pika-textnav a:hover {
+        color: rgb(189,50,50);
+}
+
+.pika-textnav a.previous {
+        float: left;
+        width: auto;
+        display: block;
+}
+
+.pika-textnav a.next {
+        float: left;
+        margin-left: 220px;
+        text-align: right;
+        width: auto;
+        display: block;
+}
+
+/*
+for the tool tips
+
+.pika-tooltip {
+        font-size:12px;
+        position:absolute;
+        color:white;
+        padding:3px;
+        background-color: rgba(0,0,0,0.7);
+        border:3px solid black;
+}
+
+.pika-counter {
+        position: absolute;
+        bottom: 45px;
+        left:15px;
+        color:white;
+        background:rgba(0,0,0,0.7);
+        font-size:11px;
+        padding:3px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius:5px;
+}
+*/
+
+/* If using user thumbnails there's a pause while the new large image loads. This is the loader for that
+	
+.pika-loader {
+        background:url(loading.gif) 3px 3px no-repeat #000;
+        background-color:rgba(0,0,0,0.9);
+        color:white; width:60px;
+        font-size:11px;
+        padding:5px 3px;
+        text-align:right;
+        position:absolute;
+        top:15px;
+        right:15px;
+}
+*/
+
+/*
+RSS aggregator
+*/
+
+.labelfield {
+				font-family: 'Ubuntu', sans-serif;
+        color:rgba(142,99,55,1);
+}
+
+.datefield {
+				font-size:.8em;
+        color:rgba(68,68,68,1);
+}
+
+#rssfeeds a {
+
+}
+
+#rssfeeds p {
+
+}
+
+code {
+
+}
+
+#rssfeed-wrap {
+        height: 330px;
+        width: 45%;
+        overflow: auto;
+        padding-right: 20px;
+/*
+        border-bottom: 1px solid rgba(142,99,55,0.25);
+*/
+        -webkit-box-shadow: 0px 5px 5px -5px rgba(49,49,49,1);
+				-moz-box-shadow: 0px 5px 5px -5px rgba(49,49,49,1);
+				box-shadow: 0px 5px 5px -5px rgba(49,49,49,1);
+				text-align:left;
+}
+
+/*
+positioning & layout
+*/
+
+#heading_bg {
+        background-color: rgba(51,113,51,1); 
+        position: absolute 0px;
+        height: 110px;
+        padding-top: 0px;
+/*
+        padding: 10px;
+*/
+        margin: auto;
+        width: 100%;
+        z-index:99999;
+        background-image: url("https://lh5.googleusercontent.com/-OeKwuQMKHDU/Uxjm5JVoOsI/AAAAAAAAAME/FAAY7xAEcak/s800/EWSWA%2520tires.jpg");
+        background-position: center center;
+}
+
+#heading_bg_overlay {
+        width: 100%;
+        height: 100%;
+        background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(51,113,51,1)), to(rgba(51,113,51,0.25)));
+        background-image: -webkit-linear-gradient(left, rgba(51,113,51,1), rgba(51,113,51,0.25)); 
+        background-image: -moz-linear-gradient(left, rgba(51,113,51,1), rgba(51,113,51,0.25));
+        background-image: -ms-linear-gradient(left, rgba(51,113,51,1), rgba(51,113,51,0.25));
+        background-image: -o-linear-gradient(left, rgba(51,113,51,1), rgba(51,113,51,0.25));
+        -moz-box-shadow: 0 0 3px 3px rgba(68,68,68,0.5);
+        -webkit-box-shadow: 0 0 3px 3px rgba(68,68,68,0.5);
+        box-shadow: 0 0 3px 3px rgba(68,68,68,0.5);
+}
+
+#heading_text {
+        padding-left: 300px;
+        padding-top: 0em;
+        width: 15em;
+        color: white;
+        font-weight: 400;
+        font-style: italic;
+}
+
+#nav {
+        background-color: rgba(142,99,55,0);
+        height: 20px;
+/*
+        padding-left: 25px;
+        padding-right: 25px;
+*/
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin: auto;
+        width: 100%;
+        z-index:1000;
+}
+
+#rightside {
+        float: right;
+        width: 325px;
+        position: relative;
+        left: 0px;
+        top: 0px;
+}
+
+#leftside {
+        float: left;
+        width: 475px;
+        position: relative;
+        left: 0px;
+        top: 0px;
+}
+
+#resources_left {
+        float:left;
+        width: 500px;
+}
+
+#resources_right {
+        float: right;
+        width: 335px;
+}
+
+#content {
+/*
+        background-color: rgba(240,239,209,0.75);
+*/
+        background: #F0EFD1; /* Old browsers */
+        background: -moz-linear-gradient(left, #F0EFD1 0%, #ffffff 50%, #F0EFD1 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,#F0EFD1), color-stop(50%,#ffffff), color-stop(100%,#F0EFD1)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(left, #F0EFD17 0%,#ffffff 50%,#F0EFD1 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(left, #F0EFD1 0%,#ffffff 50%,#F0EFD1 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(left, #F0EFD1 0%,#ffffff 50%,#F0EFD1 100%); /* IE10+ */
+        background: linear-gradient(to right, #F0EFD1 0%,#ffffff 50%,#F0EFD1 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F0EFD1', endColorstr='#F0EFD1',GradientType=1 ); /* IE6-9 */
+        width: 100%;
+        padding: 15px 25px 25px 25px;
+        margin-top: 0px;
+        -moz-box-shadow: 0 8px 8px 8px rgba(68,68,68,0.5);
+        -webkit-box-shadow: 0 8px 8px 8px rgba(68,68,68,0.5);
+        box-shadow: 0 8px 8px 8px rgba(68,68,68,0.5);
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+	border-radius: 8px;
+        z-index: 100;
+}
+
+#footer {
+        height: 200px;
+        background-color: rgb(51,113,51);
+        margin: 0px;
+        padding: 0em 1em 1em 1em;
+        color: white;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
+#footer h2 {
+        color: white;
+        background-color: rgba(68,68,68,0);
+}
+
+#footer a:hover {
+        color: rgba(240,239,209,1);
+}
+
+#footer .copy {
+        padding-left: 4em;
+        margin-top: -1em;
+}
+
+#footer .left {
+        float: left;
+}
+
+#copyright {
+	float:right;
+	width: 250px;
+	font-size: .8em;  
+	line-height: 1.1em;
+}
+
+#socialmediaicons {
+        float:right;
+        width:240px;
+}
+
+#socialplugins {
+        float:right;
+        padding-top: 1.5em;
+        padding-right: 3em;
+}
+
+#linksleft {
+	float: left;
+	width: 48%;
+	border-right: 1px solid rgba(142,99,55,1);
+}
+
+#linksright {
+	float: right;
+	width: 48%;
+}
+
+.centre_container {
+        width: 860px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+.centre_container_nav {
+        padding-left: 40px;
+        padding-top: 5px; 
+}
+
+#google_map {
+        width: 480px;
+        float:right;
+        margin-left:10px;
+        -moz-box-shadow: 0 0 5px 5px rgba(68,68,68,0.25);
+        -webkit-box-shadow: 0 0 5px 5px rgba(68,68,68,0.25);
+        box-shadow: 0 0 5px 5px rgba(68,68,68,0.25);
+}
+
+.form {
+        padding: .75em;
+}
+
+.clear {
+	clear:both;
+	height:0em;
+}

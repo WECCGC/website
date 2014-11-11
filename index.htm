@@ -1,0 +1,605 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Windsor/ Essex County Community Garden Collective</title>
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" href="main-stylesheet.css" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<!--
+configure the viewport
+https://developers.google.com/speed/docs/insights/ConfigureViewport
+-->
+<meta name=viewport content="width=device-width, initial-scale=1">
+
+<!--
+set up our OpenGraphics info
+-->
+<meta property="og:title" content="Windsor/ Essex County Community Garden Collective" />
+<meta property="og:description" content="A network of Community Gardens and Urban Agriculture Projects located in Windsor and Essex County." />
+<meta property="og:image" content="https://lh4.googleusercontent.com/-6SXn3xhVPp8/Ut7AKPi1YjI/AAAAAAAAACc/d5ugtyYXM-0/s800/375px-green_on_transparent.png" />
+
+<!--
+Facebook info
+-->
+<meta property="fb:admins" content="100006428445083" />
+<meta property="fb:app_id" content="262788667216148" />
+
+<!--
+Get the Ubuntu font from Google
+-->
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:700,400,400italic' rel='stylesheet' type='text/css'>
+
+<!--
+Fancybox CSS
+-->
+<link rel="stylesheet" href="lib/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+
+<!--
+get jQuery
+-->
+<script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<!--
+get jQuery RSS aggregator script
+-->
+<script type="text/javascript" language="javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript" language="javascript" src="lib/gfeedfetcher.js"></script>
+
+<!--
+FancyBox
+-->
+<script type="text/javascript" src="lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".various").fancybox({
+		maxWidth	: 800,
+		maxHeight	: 600,
+		fitToView	: false,
+		width		: '70%',
+		height		: '70%',
+		autoSize	: false,
+		closeClick	: false,
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
+});
+</script>
+
+<!--
+set up jQuery-based carousel
+-->
+<script type="text/javascript" src="lib/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="lib/jquery.pikachoose.js"></script>
+<script type="text/javascript" src="lib/jquery.touchwipe.min.js"></script>
+<script language="javascript">
+$(document).ready(function (){
+        $("#pikame").PikaChoose({
+                carousel:true,
+                hoverPause:true
+        });
+});
+</script>
+		
+<!--
+keep navigation bar at top of page
+-->
+<script type="text/javascript" defer="defer" src="lib/floatingnav.js"></script>
+
+</head>
+
+<body>
+<a id="top"></a>
+<!--
+Facebook social plugin
+-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "http://connect.facebook.net/en_US/all.js#xfbml=1&appId=262788667216148";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!--
+heading
+-->
+<div id="heading_bg"><div id="heading_bg_overlay">
+        <div class="centre_container centre_container_nav">
+        <img src="https://lh3.googleusercontent.com/-Ca2i9KTA_Ow/Uxdr2DUPrSI/AAAAAAAAAH8/8FE_QrC5nzI/s250/web%2520heading.png" class="left logo">
+                <div id="heading_text">
+                A network of Community Gardens and Urban Agriculture Projects located in Windsor and Essex County.
+                </div>
+        </div>
+</div></div>
+
+<div style="clear:both;"></div>
+
+<!--
+navigation
+-->
+<div id="nav">
+<div class="centre_container">
+        <ul style="padding-left:25px;">
+                <li><a href="#about" class="nav">ABOUT US</a></li>
+                <li><img src="https://lh5.googleusercontent.com/-Ikvyf_pBCCo/Uxd8926-GCI/AAAAAAAAAIM/QLP5Kzprllc/s800/seeding.png" class="nav content_img"></li>
+                <li><a href="#gardens" class="nav">OUR GARDENS</a></li>
+                <li><img src="https://lh5.googleusercontent.com/-Ikvyf_pBCCo/Uxd8926-GCI/AAAAAAAAAIM/QLP5Kzprllc/s800/seeding.png" class="nav content_img"></li>
+                <li><a href="#contact" class="nav">CONTACT US</a></li>
+                <li><img src="https://lh5.googleusercontent.com/-Ikvyf_pBCCo/Uxd8926-GCI/AAAAAAAAAIM/QLP5Kzprllc/s800/seeding.png" class="nav content_img"></li>
+                <li><a href="#links" class="nav">OUR FRIENDS</a></li>
+        </ul>
+<!--
+social media icons
+-->
+        <div id="socialmediaicons">
+                <a href="https://www.facebook.com/groups/FoodMattersWindsorEssexCounty/" target="_blank"><img src="https://lh4.googleusercontent.com/-U3sutuJC-vE/Uxd_3EvgXzI/AAAAAAAAAIg/3Cty4VusIqQ/s800/facebook-icon.png" class="socialmedia "></a>
+                <a href="https://plus.google.com/b/110172501177552901952/110172501177552901952/about" target="_blank"><img src="https://lh4.googleusercontent.com/-Ispd54D9650/Uxd_3Pe4qEI/AAAAAAAAAIo/WAUYjzjNuO4/s800/gplus-icon.png" class="socialmedia"></a>
+                <a href="http://instagram.com/weccgc" target="_blank"><img src="https://lh3.googleusercontent.com/-YjMV9d448k8/Uxd_3oKp31I/AAAAAAAAAI8/Fy_80OZSYQk/s800/instagram.png" class="socialmedia"></a>
+                <a href="http://www.pinterest.com/weccgc/" target="_blank"><img src="https://lh3.googleusercontent.com/-CbxrUCbG_qM/Uxd_3-MEAiI/AAAAAAAAAI0/lGM3OeZ9Zxo/s800/pinterest-icon.png" class="socialmedia"></a>
+                <a href="https://twitter.com/WECCGC" target="_blank"><img src="https://lh5.googleusercontent.com/-LJY1qZm6HUY/Uxd_4zkOCEI/AAAAAAAAAJU/z__K2YNB7ag/s800/twitter-icon.png" class="socialmedia"></a>
+        </div>
+</div><!-- close centre container -->
+</div><!-- close nav -->
+
+<!--
+content START
+-->
+<div class="centre_container">
+<div id="content">
+<!--
+news START
+-->
+<!--<div id="leftside">-->
+<div>
+<div id="socialplugins">
+<!--
+G+
+-->
+	<div class="g-plusone" data-size="medium" data-annotation="none"></div>
+	<script type="text/javascript">
+  		(function() {
+    			var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    			po.src = 'https://apis.google.com/js/platform.js';
+    			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  		})();
+	</script>
+
+<!--
+Facebook
+-->
+	<div class="fb-like" data-href="http://www.wegarden.ca" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
+
+<!--
+Twitter
+-->
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="WECCGC" data-count="none">Tweet</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	</div> <!-- close social media plugins -->
+	
+<h2>NEWS</h2>
+<!---
+jQuery-based carousel
+-->
+<div class="pikachoose">
+	<ul id="pikame" class="jcarousel-skin-pika">
+		<li>
+		        <img src="https://lh6.googleusercontent.com/-IbTpyAsjq6c/VFebyb-jXaI/AAAAAAAAAec/22hyj7L2P54/w193-h156-no/UniforGardenPoster-graphic.JPG"/>
+		        <span><h2>How Will Your Garden Grow?</h2>
+                        	<p>WECCGC has a new garden!<br><br>
+Join us under the pavilion for our very first meeting! We will be planning the 2015 season and planting the first of our fruit trees.<br><br>
+WHERE: <a href="https://www.google.ca/maps/place/Unifor+Local+195/@42.299554,-82.979074,17z/data=!3m1!4b1!4m2!3m1!1s0x4cce0683622b3485:0x4f9e7f9880b29b36?hl=en" target="_blank">3400 Somme Avenue</a>, UNIFOR Local 195 building<br>
+WHEN: Sunday, Nov. 9 @ 1pm<br><br>
+No gardening experience is required. All are welcome - Bring a family member and a friend!<br>
+For more information, please call Tim 519 819 0092 | <a href="mailto:tim@theholisticguy.com">email</a><br><br>
+			</p>
+		        </span>
+		</li>
+		<li>
+		        <img src="http://2.bp.blogspot.com/-BN3iYnftrLY/UvkrnMJmwdI/AAAAAAAAPHQ/FAaqrGxYQHQ/s1600/marketlogo.PNG"/>
+		        <span><h2>FARMERS MARKET</h2>
+                        	<p>Thinking of becoming a VENDOR at the <a href="http://downtownwindsorfarmersmarket.blogspot.ca/" target="_blank">Downtown Windsor Farmers Market</a> this year? Our <a href="https://drive.google.com/file/d/0B5osgbUpqNMSM2lPeEVCQ0c4Rkk/edit?usp=sharing" target="_blank">Vendor app</a> is available at our <a href="http://drawindsor.ca/downtown-windsor-farmers-market/" target="_blank">web site</a>.<br><br>
+                        Returning Vendor? Please send in your app and <a href="mailto:stevegreen@ymail.com">let us know</a> if you want your previous location, or you may be reassigned.
+                        	</p>
+                        </span>
+                </li>
+		<li>
+		        <img src="https://lh5.googleusercontent.com/-BfR-CchBuHk/Uxjm1C2QghI/AAAAAAAAAKw/lcGNm2Y5Vlg/s640/BruceGarden12.jpg"/>
+		        <span><h2>GET INVOLVED!</h2>
+                        	<p>Get involved in Community Gardens in Windsor Essex! Please fill out this <a href="https://docs.google.com/forms/d/1LXN3SVe3zGLFrL2s-2KyUMuwvzq6YWLnlbgnmsiUpZ8/viewform" target="_blank">very short form</a> and let us know you're interested!
+                        	</p>
+                        </span>
+                </li>
+		<li>
+		        <img src="http://operationmaple.ca/images/Header_Images/logo180.png"/>
+		        <span><h2>Kingsville Community Garden: Grow Your Food, Improve Your Life</h2>
+                        	<p>Check out Operation Maple's <a href="https://www.youtube.com/watch?v=BNBbgN1C4Dg" target="_blank">profile of Kingsville's ACCESS Community Garden</a> featuring some of the best and brightest (and Steve) from our collective!
+                        	</p>
+                        </span>
+                </li>
+                <li>
+		        <img src="http://static.squarespace.com/static/52f120cfe4b0bf8fcb650b3e/t/52f14826e4b0778dc6756f78/1391544368887/from-scratch.jpg"/>
+		        <span><h2>FREE COOK BOOKS!!!</h2>
+                        	<p>Please check out two new free cook books by <a href="http://www.leannebrown.ca">Leanne Brown</a>: <a href="http://www.leannebrown.ca/good-and-cheap-pdf" target="_blank">Good and Cheap</a> is a collection of recipes for people with limited incomes, particularly those on a $4/day food stamps budget. <a href="http://www.leannebrown.ca/from-scratch-pdf" target="_blank">From Scratch</a> is a vegetarian cookbook intended for people just becoming comfortable in their own kitchens.</p>
+                        </span>
+                </li>
+	</ul>
+</div><!-- close carousel -->
+</div><!-- close leftside -->
+
+<!--- right side START -->
+<!--<div id="rightside">-->
+<div>
+        <h2>RECENT BLOG POSTS</h2>
+        <img src="https://lh5.googleusercontent.com/-wy6hYbPR934/Uxou-SxVg_I/AAAAAAAAASc/2vtqsnQAUbg/s60/blogger.png" class="left" style="width:60px;">
+        <img src="https://lh5.googleusercontent.com/-VwDl4Bq6zq8/Uxjm6PAgJaI/AAAAAAAAAMk/qHLvyX44tIs/s400/Its%2520a%2520jungle.jpg" class="right body">
+                <div class="copy">
+                        <p>Many of our members and friends maintain blogs. Please visit some recent and/ or popular posts below:</p>
+
+                </div>
+<!-- feed aggregator -->
+<div id="rssfeed-wrap">
+<script type="text/javascript">
+var newsfeed=new gfeedfetcher("rssfeeds", "rssfeedsclass", "_new")
+newsfeed.addFeed("WECCGC blog", "http://weccommunitygardens.blogspot.com/feeds/posts/default");
+// newsfeed.addFeed("Locally Germinated", "http://locallygerminated.wordpress.com/feed/");
+newsfeed.addFeed("DWFM", "http://downtownwindsorfarmersmarket.blogspot.com/feeds/posts/default");
+newsfeed.addFeed("WECSA", "http://windsorcsa.blogspot.com/feeds/posts/default");
+newsfeed.addFeed("WECCGC News", "http://wegardennews.blogspot.com/feeds/posts/default");
+newsfeed.displayoptions("label datetime snippet");
+newsfeed.setentrycontainer("p");
+newsfeed.filterfeed(20, "date");
+newsfeed.init();
+</script>
+</div><!-- close feed aggregator -->
+</div><!-- close rightside -->
+                
+<div class="clear"></div>
+
+<!-- RESOURCES -->
+<h2>RESOURCES</h2>
+<div id="resources_left">
+        <img src="http://www.google.com/images/icons/product/groups-64.png" class="left">
+        <div class="copy">
+                <h3><a href="https://groups.google.com/forum/#!forum/windsor-essex-county-community-garden-collective-forum" target="_blank">OUR DISCUSSION FORUM</a></h3>
+                <p>Come on by our forums (no registration required) if you have some questions or some things you'd like to talk about.</p>
+        </div>
+                
+<div class="clear"></div>
+
+        <img src="http://www.google.com/images/icons/product/calendar-64.png" class="left">
+        <div class="copy">
+                <h3><a class="various fancybox.iframe" href="https://www.google.com/calendar/embed?src=6b0iffmnkl9it4f8lmavbmabis%40group.calendar.google.com&ctz=America/Toronto" style="border: 0" width="800" height="600" frameborder="0" scrolling="no">OUR EVENT CALENDAR</a></h3>
+                <p>See what's going on in the gardens in our area, find out about markets, workshops and other events and take part in one of our community events!</p>
+        </div>
+
+</div><!-- close resources left -->
+
+<div id="resources_right">
+        <img src="https://www.youtube.com/yt/brand/media/image/YouTube-icon-full_color.png" class="left" style="width:60px;">
+        <div class="copy">
+                <h3><a href="https://www.youtube.com/channel/UCMkbyYc8j7I2CwJSxSCMPiw" target="_blank">OUR YOUTUBE CHANNEL</a></h3>
+                <p>Members of our collective have posted videos with tours and tutorials.</p>
+        </div>
+
+<div class="clear"></div>
+
+        <img src="http://www.google.com/images/icons/product/drive-64.png" class="left">
+        <div class="copy">
+                <h3><a class="various fancybox.iframe" href="https://drive.google.com/embeddedfolderview?id=0B9hzDZ9eI76FZ1NOcGpUWTd0bEU&usp=sharing#grid" style="border: 0" width="800" height="600" frameborder="0" scrolling="no">DOCUMENTS</a></h3>
+                <p>Check out what we've got in the way of spreadsheets, forms, articles and other valuable information.</p>
+        </div>
+</div><!-- close resources right -->
+
+<div class="clear"><a id="about">&nbsp</a></div>
+
+<!-- ABOUT US -->
+<div>
+        <h2>ABOUT THE WECCGC</h2>
+        <div style="float:left;">
+        	<img src="https://lh6.googleusercontent.com/-nEs1KKjk6qQ/UxeS2pYkvBI/AAAAAAAAAJw/F_55L9_BZGQ/s60/information-icon7.png" ><br>
+        	<h4><a href="#top">back to top</a></h4>
+        </div>
+        <div class="copy">
+                <img src="https://lh6.googleusercontent.com/-MmjIT2RYpz8/Uxjm6LBRC3I/AAAAAAAAAMg/sT9s1HlY_-o/s400/MillStreetInitiative%25202013%25201.jpg"" class="right body">
+                <p>The Windsor/ Essex County Community Garden Collective is a free association of Community Garden members from across Windsor and Essex County. It exists to provide support to members and general public regarding starting gardens, maintaining community gardens and sharing community garden resources and information. Every garden has its own unique mission and personality that reflects the neighbourhood it is born in.</p>
+		<p><h3>Our History</h3>
+The Windsor & Essex County Community Garden Collective is a network of Community Garden and Urban Agriculture projects in Windsor and Essex County. Most of the community gardens were developed at grass roots level. Two of the gardens were developed by agencies in partnership with the community and received United Way funding to start. Many of our gardens were a direct result of the City of Windsor’s ‘Seed & Feed’ one time program that gave out start up monies for the community gardens to get established. The majority of the community gardens rely on donations of time and labour from the community to continue. These public spaces are managed by teams of dedicated and highly committed members of each community garden. Thousands of pounds of food are shared with the community informally and through food rescue programs. Each community garden can be congratulated for the hard work they put in all year round to maintain, plan, harvest, and share their bounty with children, parents, individuals, community groups and neighbourhoods. The Windsor and Essex County Community Garden Collective is not run by any local organization- but cooperates with many. It is grateful for all those businesses and agencies that partner with the gardens to make this happen. We could not do it without your support. The WECCGC is also grateful for the Ontario Trillium Foundation for supporting the role of a Network Coordinator to assist in the growth of the movement. If you have any questions, please feel free to <a href="mailto:stevegreen@ymail.com">email the Network Coordinator</a>.</p>
+                <p><h3>Strategic Priorities – 2014<br>
+Windsor Essex County Community Garden Collective<br>
+(Adopted, November 2013)</h3></p>
+
+                <p><h3>Maintaining Existing Gardens:</h3>
+WECCGC will work together to ensure all gardens remain productive, welcoming green spaces. This will occur through both regular maintenance and anticipatory planning for future tasks. We exist to support one another in our community garden projects, to share knowledge and experience, and to work together to establish a vibrant community garden network across Windsor and Essex County.</p>
+
+                <p><h3>New Gardens:</h3>
+WECCGC will endeavor to develop new gardens as volunteer capacity and financial resources allow. The WECCGC will seek out external funding as necessary to develop these garden spaces. Other types of gardens may be considered beyond the current garden model.</p>
+
+                <p><h3>Education & Mentorship:</h3>
+WECCGC will continue to provide educational events and information to its members and the wider community through skill sharing among local gardeners. Workshops, garden events and other educational activities will be held to ensure that all gardeners have the skills and knowledge to grow good gardens and make good use of the food they produce. This will involve supporting new gardeners, working with schools, and continuing to develop workshops and educational materials. When possible, external funding and partnerships will be used to improve and formalize educational offerings.</p>
+
+                <p><h3>Advocacy & Networking:</h3>
+WECCGC will work to support and enable existing and emerging organizations involved with food production, food security, access to local food in Windsor and Essex County. The Collective seeks to engage the public regarding community gardens, there purpose and value within neighborhoods and communities, rural and urban.</p>
+	</div>
+
+<div class="clear"><a id="gardens">&nbsp</a></div>
+
+<!-- OUR GARDENS -->
+<div>
+        <h2>OUR GARDENS</h2>
+        <div style="float:left;">
+        	<img src="https://lh4.googleusercontent.com/-v59knTBWs68/Uxeb2U5fWtI/AAAAAAAAAKA/uNpStd5a23s/s60/Google-Maps-icon.png"><br>
+        	<h4><a href="#top">back to top</a></h4>
+        </div>
+                <div class="copy">
+                <p>Please use the map below to locate our gardens. By clicking on the markers you can get additional information about each garden, including links to blog and web pages. If you need more information, please <a href="#contact">contact us</a> at the bottom of this page.</p>
+
+<div>
+
+<!-- Google Map -->
+<div id="google_map">
+        <iframe src="https://mapsengine.google.com/map/embed?mid=zDzjWEWbxRJM.kZHGl2jbCAR0" width="480" height="480">
+        </iframe>
+<!-- garden submission form -->   
+     
+<!-- original Google embed code
+         <iframe src="https://docs.google.com/forms/d/1BGFwn3wmAgLrtHoUt_hLY_O9z65kjHMEIEhdO3hPnyQ/viewform?embedded=true" width="480" height="300">Loading...</iframe>
+-->
+
+<!-- original Google Form confirmation page
+<form action="https://docs.google.com/forms/d/1BGFwn3wmAgLrtHoUt_hLY_O9z65kjHMEIEhdO3hPnyQ/formResponse" method="POST" id="ss-form" target="_self" onsubmit="" class="form">
+-->
+
+<!-- edited confirmation -->
+<script type="text/javascript">var submitted=false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe"
+style="display:none;" onload="if(submitted)
+{window.location='confirm.htm';}"></iframe>
+<form action="https://docs.google.com/forms/d/1BGFwn3wmAgLrtHoUt_hLY_O9z65kjHMEIEhdO3hPnyQ/formResponse" method="post"
+target="hidden_iframe" onsubmit="submitted=true;" class="form">
+
+<div role="list">
+<div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item  ss-text">
+<div class="ss-form-entry">
+        <label class="ss-q-item-label" for="entry_1083975178">
+                <div class="ss-q-title"><h3>Would you like to know more about starting a garden at your school or in your community?</h3>
+                </div>
+                <div class="ss-q-help ss-secondary-text" dir="ltr">If so, please provide us with your contact information and we&#39;ll see what we can do to help!
+                </div>
+        </label>
+<input type="text" name="entry.1083975178" value="" class="ss-q-short" id="entry_1083975178" dir="auto" aria-label="Would you like to know more about starting a garden at your school or in your community? If so, please provide us with your contact information and we&#39;ll see what we can do to help! " title="">
+<div class="error-message"></div>
+<!--
+<div class="required-message">This is a required question</div>
+-->
+</div></div></div>
+<br>
+<div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item  ss-text">
+<div class="ss-form-entry">
+        <label class="ss-q-item-label" for="entry_9276773">
+                <div class="ss-q-title"><h3>Do you know of any community or school gardens that are not on this map?</h3>
+                </div>
+                <div class="ss-q-help ss-secondary-text" dir="ltr">If so, would you mind letting us know where it is?
+                </div>
+        </label>
+<input type="text" name="entry.9276773" value="" class="ss-q-short" id="entry_9276773" dir="auto" aria-label="Do you know of any community or school gardens that are not on this map? If so, would you mind letting us know where it is? " title="">
+<div class="error-message"></div>
+<!--
+<div class="required-message">This is a required question</div>
+-->
+</div></div></div>
+<input type="hidden" name="draftResponse" value="[,,&quot;174565509103810168&quot;]
+">
+<input type="hidden" name="pageHistory" value="0">
+<input type="hidden" name="fromEmail" value="false">
+
+<input type="hidden" name="fbzx" value="174565509103810168">
+
+<div class="ss-item ss-navigate">
+<input type="submit" name="submit" value="Submit" id="ss-submit">
+<!--        <table id="navigation-table">
+        <tbody>
+        <tr>
+        <td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+                <input type="submit" name="submit" value="Submit" id="ss-submit">
+
+                <div class="ss-password-warning ss-secondary-text">Never submit passwords through Google Forms.</div>
+
+        </td>
+        </tr>
+        </tbody>
+        </table>-->
+</div></div>
+</form>
+</div></div>
+
+<!-- locations -->
+<!--
+Facebook logo https://lh3.googleusercontent.com/-juU9SzOy3O4/U9KCOXanXPI/AAAAAAAAAcU/AgG_YaKS5yw/s22/FB-f-Logo__blue_1024.png
+Twitter logo https://lh4.googleusercontent.com/-6Lb34OzN-dg/U9KCObxknTI/AAAAAAAAAcQ/qK1MzLBuxN0/s22/Twitter_logo_blue.png
+-->
+
+<h3>COMMUNITY GARDENS <img src="https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld=|289728|444444" class="map_pin"></h3>
+
+<p><h3>The Citizens Environment Alliance Garden</h3>
+1950 Ottawa St, Windsor, ON N8Y 1R7<br>
+phone 519-973-1116
+<a href="http://www.citizensenvironmentalliance.org/" target="_blank">web site</a></p>
+
+<p><h3>Bruce Avenue Park Community Garden</h3>
+694 Bruce Ave, Windsor, ON N9A 4X3<br>
+<a href="mailto:dwccgardens@gmail.com">email</a></p>
+
+<p><h3>Campus Community Garden</h3>
+380 California Ave, University of Windsor, Windsor, ON N9B 3A9<br>
+<a href="mailto:ccgp@uwindsor.ca">email</a> | <a href="http://www1.uwindsor.ca/ccgp/" target="_blank">web site</a> | <a href="https://www.facebook.com/uwindsorCCGP" target="_blank"><img src="https://lh3.googleusercontent.com/-juU9SzOy3O4/U9KCOXanXPI/AAAAAAAAAcU/AgG_YaKS5yw/s22/FB-f-Logo__blue_1024.png"></a></p>
+
+<p><h3>Glengarry Community Garden</h3>
+445 Glengarry Ave, Windsor, ON N9A 1P9<br>
+<a href="mailto:dwccgardens@gmail.com">email</a></p>
+
+<p><h3>Ford City Community Garden</h3>
+970 Drouillard Rd, Windsor, ON N8Y 2P6<br>
+Steve Green <a href="http://fordcitycommunitygarden.blogspot.ca" target="_blank">blog</a> | <a href="https://www.facebook.com/FordCityCommunityGarden" target="_blank"><img src="https://lh3.googleusercontent.com/-juU9SzOy3O4/U9KCOXanXPI/AAAAAAAAAcU/AgG_YaKS5yw/s22/FB-f-Logo__blue_1024.png"></a> | <a href="mailto:stevegreen@ymail.com">email</a> </p>
+
+<p><h3>Revitalizing Reginald Garden</h3>
+5465 Reginald St, Windsor, ON N8T 1A4<br>
+Elizabeth <a href="mailto:emaloned@uWindsor.ca">email</a><br>
+phone 519-962-3043</p>
+
+<p><h3>Together We Flourish</h3>
+5420 Empress St, Windsor, ON N8T 2E7<br>
+<a href="http://twfgarden.wix.com/togetherweflourish" target="_blank">web site</a> | <a href="https://www.facebook.com/groups/258574667606180/" target="_blank"><img src="https://lh3.googleusercontent.com/-juU9SzOy3O4/U9KCOXanXPI/AAAAAAAAAcU/AgG_YaKS5yw/s22/FB-f-Logo__blue_1024.png"></a> | <a href="mailto:togetherweflourish@activist.com">email</a><br>
+phone 519 567 7927</p>
+
+<p><h3>The Ray and Shirley Gould Community Garden at the Unemployed Help Centre</h3>
+6955 Cantelon Dr, Windsor, ON N8T 3J9</p>
+
+<p><h3>Community Garden of Hope</h3>
+235 Amy Croft Dr, Tecumseh, ON N9K 1C8<br>
+Pastor Glenn Hart<br>
+phone 519-979-8082 ext.214</p>
+
+<p><h3>LaSalle Community Garden</h3>
+5675 Malden Rd, Windsor, ON N9H 1R9<br>
+<a href="mailto:vickirees@hotmail.com">email</a></p>
+
+<p><h3>ACCESS Community Garden</h3>
+Ryan Couture, Community Garden Coordinator | <a href="mailto:rcouture@accesscounty.ca">email</a><br>
+Phone 519-733-8983 ext 34 | Fax 519-733-2642<br>
+<a href="https://www.facebook.com/ACCESScounty" target="_blank"><img src="https://lh3.googleusercontent.com/-juU9SzOy3O4/U9KCOXanXPI/AAAAAAAAAcU/AgG_YaKS5yw/s22/FB-f-Logo__blue_1024.png"></a></p>
+
+
+<p><h3>Mill Street Neighbourhood Community Garden</h3>
+29 Lutsch Ave, Leamington, ON N8H 2N4<br>
+Irena <a href="mailto:neighbours@millstreetneighbourhood.com">email</a></p>
+
+<p><h3>Windsor Residence Garden</h3>
+1101 McDougall Ave, Windsor, ON N9A 1M2<br>
+Erika Pozzuoli, Youth Transitional Support Worker <a href="mailto:pozzuol@@gmail.com">email</a><br>
+phone 519-253-3666<br>
+<!-- residenceinc.com --></p>
+
+<p><h3>House of Shalom Community Garden</h3>
+247 Brock St, Amherstburg, ON<br>
+Holly Kirk McLean, Program Director, House of Shalom Youth Centre <a href="mailto:holly.hofs@hotmail.com">email</a><br>
+phone 519-736-6811</p>
+
+<p><h3>GessTwood Retreat & Camp Centre</h3>
+1034 Mole Side Rd, Essex, ON, Canada<br>
+(mailing address) PO Box 44, Essex, ON N8M2Y1<br>
+phone 519-776-7119<br>
+<a href="mailto:gesstwoodcamp@gmail.com">email</a> | <a href="http://www.gesstwoodcamp.com" target="_blank">web site</a> | <a href="https://www.facebook.com/gesstwoodcamp" target="_blank"><img src="https://lh3.googleusercontent.com/-juU9SzOy3O4/U9KCOXanXPI/AAAAAAAAAcU/AgG_YaKS5yw/s22/FB-f-Logo__blue_1024.png"></a></p>
+
+<p><h3>Ten Friends Diner</h3>
+1400 Windsor Ave (at Ellis)<br>
+Windsor, Ontario N8X 3L9<br>
+phone 519-254-3000<br>
+<a href="http://tenfriendsdiner.com/ten-friends-diner-community-garden-windsor-ontario/" target="_blank">web site</a></p>
+
+<p><h3>First Baptist Church Community Garden</h3>
+710 Mercer St, Windsor, ON<br>
+Bob Cameron<br>
+phone 519-254-6631</p>
+
+<h3>SCHOOL GARDENS <img src="https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld=|E27918|444444" class="map_pin"></h3>
+<p><h3>Ready-Set-Go/ Prince Edward Community Garden</h3>
+949 Giles Blvd E, Windsor, ON N9A 4G2, Canada<br>
+Kate Winters, Community Development Assistant, Ready-Set-Go! <a href="mailto:wintersk@uwindsor.ca">email</a><br>
+phone 519 977 9407</p>
+
+<p><h3>Cardinal Carter Catholic Secondary School</h3>
+120 Ellison Ave, Leamington, ON N8H 5C7<br>
+phone 519-322-2804<br>
+Chris Church <a href="mailto:chris_church@wecdsb.on.ca">email</a>, Paul George <a href="mailto:paul_george@wecdsb.on.ca">email</a></p>
+
+<p><h3>New Beginnings Youth Garden</h3>
+1049 Janette Ave, Windsor, ON N8X 1Y6<br>
+Myles Soulliere <a href="mailto:msoulliere@newbe.ca">email</a><br>
+phone 519-254-2363</p>
+</div>
+             
+<div class="clear"><a id="contact">&nbsp</a></div>
+
+<!-- CONTACT US -->
+<h2>CONTACT US</h2>
+        <div style="float:left;">
+        <img src="https://lh4.googleusercontent.com/-6SXn3xhVPp8/Ut7AKPi1YjI/AAAAAAAAACc/d5ugtyYXM-0/s60/375px-green_on_transparent.png"><br>
+        <h4><a href="#top">back to top</a></h4>
+        </div>
+<div class="copy">
+Steve Green, Network Coordinator | <a href="mailto:steve@wegarden.ca">email</a><br>
+300 Giles Blvd, Unit A1, Windsor, Ontario, N9A 4C4 <a href="https://goo.gl/maps/SZP8u" target="_blank">map</a><br>
+519-258-3033 ext. 1148<br>
+</div>
+
+<div class="clear"><a id="links">&nbsp</a></div>
+
+<!-- OUR FRIENDS -->
+<h2>OUR FRIENDS</h2>
+        <div style="float:left;">
+        <img src="https://lh3.googleusercontent.com/-v09A2sw8JCw/Ux3-NFRFm2I/AAAAAAAAATA/Ojf97lXp-wE/s60/Debug-External-link-icon.png"><br>
+        <h4><a href="#top">back to top</a></h4>
+        </div>
+<div class="copy">
+<!-- left side -->
+<div id="linksleft">
+	<p>Ontario Trillium Foundation <a href="http://www.otf.ca/" target="_blank" class="external">otf.ca</a><br>
+	<a href="http://www.otf.ca/" target="_blank"><img src="https://lh3.googleusercontent.com/-TST2GzIzQBw/UxnU78E6ElI/AAAAAAAAASA/htdPPxXumpY/s200/OTF.png"></a></p>
+	<p>School Garden Network <a href="http://schoolgardennetwork.ca/" target="_blank" class="external">schoolgardennetwork.ca</a></p>
+	<p>Peterborough Community Garden Network <a href="http://growpeterborough.org/" target="_blank" class="external">growpeterborough.org</a></p>
+	<p>Sustain Ontario <a href="http://www.sustainontario.com" target="_blank" class="external">sustainontario.com</a><br>
+	<a href="http://www.sustainontario.com" target="_blank"><img src="http://sustainontario.com/wp2011/wp-content/uploads/2014/08/Membership-badge-horizontal-2-2014.png" style="margin-top:-40px;margin-bottom:-40px;"></a></p>
+</div>
+<!-- right side -->
+<div id="linksright">
+	<p>Downtown Windsor Farmer's Market <a href="http://downtownwindsorfarmersmarket.blogspot.ca/" target="_blank" class="external">blog</a></p>
+	<p>Community Food Centres <a href="http://cfccanada.ca/" target="_blank" class="external">cfccanada.ca</a></p>
+	<p>Sustain Ontario <a href="http://sustainontario.com/" target="_blank" class="external">sustainontario.com</a></p>
+	<p>Green Thumbs Growing Kids <a href="http://www.kidsgrowing.ca/" target="_blank" class="external">kidsgrowing.ca</a></p>
+	<p>Permaculture Magazine <a href="http://permaculture.co.uk/" target="_blank" class="external">permaculture.co.uk</a></p>
+	<p><a href="http://fallingfruit.org/about" target="_blank" class="external">Falling Fruit</a> is a celebration of the overlooked culinary bounty of our city streets. By quantifying this resource on a map, we hope to facilitate intimate connections between people, food, and the natural organisms growing in our neighborhoods. Not just a free lunch! Foraging in the 21st century is an opportunity for urban exploration, to fight the scourge of stained sidewalks, and to reconnect with the botanical origins of food.</p>
+</div>
+<hr>
+<!-- centred -->
+
+</div>
+
+<div class="clear"><a id="media">&nbsp</a></div>
+
+<!--
+footer START
+-->
+<div id="footer">
+	<div class="left">
+		<h2>MEDIA</h2>
+		<div class="copy">
+		<p>WECCGC logos (2833×1133px):<br>
+		<a href="https://lh3.googleusercontent.com/-JmIxe4u75Jk/UyMslCdzKNI/AAAAAAAAATY/aojxdIn1P80/s0/logo-on_white.png" target="_blank">full colour (RGB) on white background</a><br>
+		<a href="https://lh5.googleusercontent.com/-uWBxYnttaXw/UyMslGz9TxI/AAAAAAAAATU/wqX3ZtmmjHk/s0/logo-transparent.png" target="_blank">full colour (RGB) on transparent background</a><br>
+		<a href="https://lh6.googleusercontent.com/-qyxkQFYH-sQ/UzH0KsL2ltI/AAAAAAAAAUQ/j1QnE6PZtQM/s0/logo%2528BW%2529-on_white.png" target="_blank">black & white on white background</a><br>
+		<a href="https://lh6.googleusercontent.com/-nh-wCAHCS8E/UzH0Ks-S8NI/AAAAAAAAAUU/ioe3eKB2Nyk/s0/logo%2528BW%2529-transparent.png" target="_blank">black & white on transparent background</a></p>
+		</div>
+	</div>
+		
+		<div id="copyright">
+		<img src="https://lh3.googleusercontent.com/-Ca2i9KTA_Ow/Uxdr2DUPrSI/AAAAAAAAAH8/8FE_QrC5nzI/s250/web%2520heading.png"  style="margin-top:1em;">
+		<hr>
+                	<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0; margin-right:.5em;margin-bottom:5em;" src="http://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" class="left" /></a><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">WECCGC</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://robertross.net" property="cc:attributionName" rel="cc:attributionURL">Robert Ross</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons License</a>.
+        	</div>
+        
+        
+
+</div>
+
+</div>
+</div>
+</body>
+</html>
